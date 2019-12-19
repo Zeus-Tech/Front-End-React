@@ -1,5 +1,10 @@
 import React from 'react';
 import Navigation from './components/navigation';
+import Contact from './components/pages/contact';
+import {Route} from 'react-router-dom';
+import Home from './components/pages/home';
+
+import banner from './images/banner.jpg';
 import './App.css';
 
 function App() {
@@ -7,13 +12,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navigation/>
-        <h1>Welcome to Code Zeus</h1>
-        <h3>This site is under Construction</h3>
+        <img className='banner' src={banner} alt='website banner'/>
       </header>
-      <footer>
-        <h6>A Zeus Tech Company ©Copyright 2019</h6>
-      </footer>
+      <Route exact path='/' component={Home} />
+      <Route path='/contact' component={Contact} />
     </div>
+
   );
 }
 
