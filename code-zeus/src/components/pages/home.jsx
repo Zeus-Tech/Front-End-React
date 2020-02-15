@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import donate from "../../images/donate.png";
 
 const Container = styled.div`
   text-align: center;
@@ -37,6 +38,13 @@ export default function Home() {
             allowtransparency="true"
             frameborder="0"
           />
+          <p>
+            You can donate towards the development of the server by clicking the
+            button below.
+          </p>
+          <a href="paypal.me/rustolympus">
+            <img src={donate} alt="donate button" />
+          </a>
         </div>
       </div>
     </Container>
