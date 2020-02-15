@@ -1,7 +1,7 @@
 //Imports
 import React from "react";
 import styled from "styled-components";
-import logo from "../images/logo.png";
+import olympus from "../images/olympus.png";
 import { NavLink } from "react-router-dom";
 
 //Styles
@@ -44,7 +44,7 @@ function Navigation() {
   return (
     <NavBar className="navigation">
       <div className="imageContainer">
-        <img src={logo} alt="code zeus logo" />
+        <img src={olympus} alt="code zeus logo" />
       </div>
       <nav>
         <NavLink to="">Home</NavLink>

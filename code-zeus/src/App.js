@@ -4,7 +4,7 @@ import Contact from "./components/pages/contact";
 import { Route } from "react-router-dom";
 import Home from "./components/pages/home";
 
-import banner from "./images/banner.jpg";
+import header from "./images/header.jpg";
 import "./App.css";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navigation />
-        <img className="banner" src={banner} alt="website banner" />
+        <img className="banner" src={header} alt="website banner" />
       </header>
       <Route exact path="/" component={Home} />
       <Route path="/contact" component={Contact} />
